@@ -13,6 +13,7 @@ action "test" {
   needs = "build"
   uses = "actions/npm@master"
   args = "t"
+  secrets = ["NPM_TOKEN"]
 }
 
 action "publish" {
