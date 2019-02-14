@@ -5,7 +5,7 @@
 # Overview
 
 This module is intended to be consumed by your favourite continuous integration tool to
-halt execution if `npm audit` or `yarn audit` finds vulnerabilities at or above the specified threshold.
+halt execution if `npm audit` or `yarn audit` finds vulnerabilities at or above the specified threshold. It also generates html report if any issues are found (only for `yarn audit` currently).
 
 # Set up
 
