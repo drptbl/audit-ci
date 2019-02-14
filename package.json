@@ -29,7 +29,7 @@
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint -c ./.eslintrc.json lib/*",
+    "lint": "eslint -c ./.eslintrc.json lib/*.js",
     "test": "npm run lint"
   },
   "dependencies": {
