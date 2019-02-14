@@ -6,6 +6,7 @@ workflow "build, test and publish" {
 action "build" {
   uses = "actions/npm@master"
   args = "ci"
+  secrets = ["NPM_TOKEN"]
 }
 
 action "test" {
