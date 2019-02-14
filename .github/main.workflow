@@ -14,15 +14,8 @@ action "test" {
   args = "t"
 }
 
-# Filter for a new tag
-action "tag" {
-  needs = "test"
-  uses = "actions/bin/filter@master"
-  args = "tag"
-}
-
 action "publish" {
-  needs = "tag"
+  needs = "test"
   uses = "actions/npm@master"
   args = "publish --access public"
   secrets = ["NPM_TOKEN"]
