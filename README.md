@@ -142,7 +142,7 @@ audit-ci
 audit-ci --config audit-ci.json
 ```
 
-## Q&A
+## Q&A 
 
 #### Why run `audit-ci` on PR builds for `Travis-CI` and not the push builds?
 
